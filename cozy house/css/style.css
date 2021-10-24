@@ -1,0 +1,879 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media (max-width: 1210px) {
+  .container {
+    width: 95%;
+  }
+}
+
+body {
+  font-weight: 400;
+  background-color: #F6F6F6;
+}
+
+body h3 {
+  font-family: Georgia;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+body h4 {
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+body p {
+  color: #fff;
+  font-family: Arial;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+@media (max-width: 768px) {
+  .header .textheader {
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .burger {
+    background-image: url(../images/Burger.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.position {
+  height: 120px;
+  top: 0px;
+  padding: 30px 0px;
+}
+
+.header-text h1 {
+  color: #545454;
+}
+
+.header-text p {
+  color: #292929;
+}
+
+.header-text a {
+  color: #545454;
+}
+
+.header-text a:hover {
+  color: #292929;
+}
+
+.header-text a:active {
+  color: #545454;
+}
+
+h1 {
+  color: #F1CDB3;
+  font-family: Georgia;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+p {
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  padding-top: 10px;
+}
+
+li {
+  display: inline-block;
+  padding-left: 35px;
+}
+
+li a {
+  text-decoration: none;
+  font-family: Arial;
+  color: #CDCDCD;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+li a:active {
+  border-bottom: 3px solid #F1CDB3;
+}
+
+li a:hover {
+  color: #FAFAFA;
+}
+
+.background {
+  background: url(../images/start-screen-gradient-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 180px;
+}
+
+@media (max-width: 530px) {
+  .top {
+    padding-bottom: 50px;
+  }
+}
+
+.top-image {
+  background-image: url(../images/start-screen-puppy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 698px;
+  height: 728px;
+}
+
+@media (max-width: 1200px) {
+  .top-image {
+    width: 448px;
+    height: 467px;
+  }
+}
+
+@media (max-width: 960px) {
+  .top-image {
+    width: 400px;
+    height: 417px;
+  }
+}
+
+@media (max-width: 700px) {
+  .top-image {
+    width: 235px;
+    height: 259px;
+  }
+}
+
+@media (max-width: 530px) {
+  .top-image {
+    display: none;
+  }
+}
+
+.top-text {
+  width: 460px;
+  height: 321px;
+  padding-right: 42px;
+}
+
+@media (max-width: 960px) {
+  .top-text {
+    width: 260px;
+    height: 181px;
+  }
+}
+
+.top-text h2 {
+  font-family: Georgia;
+  color: #fff;
+  font-size: 44px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  padding-bottom: 42px;
+}
+
+@media (max-width: 960px) {
+  .top-text h2 {
+    font-size: 24px;
+    padding: 0px;
+  }
+}
+
+.top-text p {
+  color: #CDCDCD;
+  padding-bottom: 42px;
+}
+
+@media (max-width: 960px) {
+  .top-text p {
+    font-size: 11px;
+    line-height: 13px;
+    padding-bottom: 12px;
+  }
+}
+
+.top-text button {
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #292929;
+  margin: 10px 0px;
+  padding: 15px 45px;
+  border-radius: 100px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #F1CDB3;
+  border: none;
+  outline: 0;
+}
+
+.top-text button:hover {
+  cursor: pointer;
+  background-color: #FDDCC4;
+}
+
+.abouthshelder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: #fff;
+}
+
+.abouthshelder .abouthshelder-image {
+  background-image: url(../images/about-pets.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 408px;
+  margin-right: 60px;
+}
+
+@media (max-width: 850px) {
+  .abouthshelder .abouthshelder-image {
+    display: none;
+  }
+}
+
+.abouthshelder .abouthshelder-text {
+  width: 490px;
+  height: 380px;
+  padding-left: 60px;
+}
+
+@media (max-width: 850px) {
+  .abouthshelder .abouthshelder-text {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 530px) {
+  .abouthshelder .abouthshelder-text {
+    width: 290px;
+    height: 250px;
+  }
+  .abouthshelder .abouthshelder-text h3 {
+    font-size: 24px;
+  }
+  .abouthshelder .abouthshelder-text p {
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
+
+.abouthshelder p {
+  padding-top: 25px;
+  color: #4C4C4C;
+}
+
+.ourfriends {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.ourfriends .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ourfriends button {
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #292929;
+  margin: 10px 0px;
+  padding: 15px 45px;
+  border-radius: 100px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #F1CDB3;
+  border: none;
+  outline: 0;
+}
+
+.ourfriends button:hover {
+  cursor: pointer;
+  background-color: #FDDCC4;
+}
+
+.ourfriend {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ourpets-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ourpets-button .all-left-arrow {
+  background-image: url(../images/__.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  margin: 0px 10px;
+  cursor: pointer;
+  border: 2px solid #CDCDCD;
+}
+
+.ourpets-button .left-arrow {
+  background-image: url(../images/left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  margin: 0px 10px;
+  cursor: pointer;
+  border: 2px solid #CDCDCD;
+}
+
+.ourpets-button .arrow {
+  background-image: url(../images/1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  margin: 0px 10px;
+  cursor: pointer;
+  background-color: #F1CDB3;
+}
+
+.ourpets-button .right-arrow {
+  background-image: url(../images/right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  margin: 0px 10px;
+  cursor: pointer;
+  border: 2px solid #F1CDB3;
+}
+
+.ourpets-button .all-right-arrow {
+  background-image: url(../images/allright.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  margin: 0px 10px;
+  cursor: pointer;
+  border: 2px solid #F1CDB3;
+}
+
+.ourfriends-text {
+  width: 403px;
+  padding-bottom: 30px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 460px) {
+  .ourfriends-text {
+    width: 300px;
+  }
+  .ourfriends-text h3 {
+    font-size: 25px;
+  }
+}
+
+.ourfriends-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 30px;
+}
+
+.ourfriends-card .arrow-left {
+  background-image: url(../images/Arrow.png);
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.ourfriends-card .arrow-left:hover {
+  background: #FDDCC4;
+  border-radius: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.ourfriends-card .arrow-left:hover {
+  background-image: url(../images/Arrow.png);
+}
+
+@media (max-width: 1151px) {
+  .ourfriends-card .arrow-left {
+    display: none;
+  }
+}
+
+.ourfriends-card .arrow-right {
+  background-image: url(../images/Arrow-right.png);
+  opacity: 1;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.ourfriends-card .arrow-right:hover {
+  background: #FDDCC4;
+  border-radius: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.ourfriends-card .arrow-right:hover {
+  background-image: url(../images/Arrow-right.png);
+}
+
+@media (max-width: 1151px) {
+  .ourfriends-card .arrow-right {
+    display: none;
+  }
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards .card-ourpets {
+  margin: 15px;
+}
+
+@media (max-width: 1210px) {
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.card {
+  background: #FAFAFA;
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.card .card-ourpets {
+  margin: 15px;
+}
+
+.card button {
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #292929;
+  margin: 10px 0px;
+  padding: 15px 45px;
+  border-radius: 100px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: 2px solid #F1CDB3;
+  background: #FAFAFA;
+  outline: 0;
+}
+
+.card button:hover {
+  cursor: pointer;
+  background-color: #FDDCC4;
+  border: none;
+}
+
+.card .card-text {
+  padding: 30px 0px;
+}
+
+.card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.you {
+  background-color: #fff;
+}
+
+.youhelp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.youhelp .youhelp-text {
+  width: 321px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 360px) {
+  .youhelp .youhelp-text {
+    width: 250px;
+  }
+  .youhelp .youhelp-text h3 {
+    font-size: 25px;
+  }
+}
+
+.youhelp .youhelp-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.youhelp .youhelp-column .column {
+  padding: 57px;
+  text-align: center;
+}
+
+.donation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.donation .donation-image {
+  background-image: url(../images/donation-dog.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 505px;
+  height: 261px;
+}
+
+@media (max-width: 930px) {
+  .donation .donation-image {
+    display: none;
+  }
+}
+
+.donation .donation-text {
+  width: 380px;
+  height: 282px;
+  padding-left: 30px;
+}
+
+@media (max-width: 930px) {
+  .donation .donation-text {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 410px) {
+  .donation .donation-text {
+    width: 285px;
+  }
+  .donation .donation-text h3 {
+    font-size: 24px;
+  }
+}
+
+.donation .donation-text h5 {
+  font-family: Georgia;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  padding: 20px 0px;
+}
+
+.donation .donation-text .credit {
+  background: #F1CDB3;
+  border-radius: 9px;
+  padding: 10px 15px;
+}
+
+.donation .donation-text .credit img {
+  vertical-align: middle;
+}
+
+.donation .donation-text .credit a {
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  padding-left: 15px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+@media (max-width: 410px) {
+  .donation .donation-text .credit a {
+    font-size: 15px;
+  }
+}
+
+.donation .donation-text p {
+  font-family: Arial;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B2B2B2;
+  padding-top: 20px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding-top: 40px;
+}
+
+@media (max-width: 1025px) {
+  .footer {
+    padding-top: 10px;
+  }
+}
+
+.footer .footer-image {
+  background-image: url(../images/footer-puppy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 310px;
+}
+
+@media (max-width: 1025px) {
+  .footer .footer-image {
+    margin: 40px 32px 0px 32px;
+  }
+}
+
+@media (max-width: 370px) {
+  .footer .footer-image {
+    margin: 40px 0px 0px 0px;
+  }
+}
+
+.footer .footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 60px;
+  padding-top: 16px;
+  width: 334px;
+}
+
+.footer .footer-text h3 {
+  color: #FFFFFF;
+}
+
+.footer .footer-text h4 {
+  color: #F1CDB3;
+  padding-left: 20px;
+}
+
+.footer .footer-text .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1025px) {
+  .footer .footer-text {
+    margin: 20px 15px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 370px) {
+  .footer .footer-text {
+    margin: 20px 0px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

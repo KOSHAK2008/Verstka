@@ -1,0 +1,615 @@
+$background: #F6F6F6;
+$backgroundhover: #FDDCC4;
+$fontheading: Georgia;
+$fonttext: Arial;
+$fontweight: 400;
+$colortopnormal: #CDCDCD;
+$colorheaderfooter: #fff;
+$colorelement: #F1CDB3;
+$colortext: #545454;
+$letterspacing: 0.06em;
+$paddingtop: 42px;
+$colorourpets: #292929;
+
+
+@mixin backgroundhf {
+    background: url(../images/start-screen-gradient-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    @include background-image;
+}
+
+@mixin flex ($center: center) {
+    display: flex;
+    justify-content: $center;
+    align-items: $center;
+}
+
+@mixin button {
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    color: #292929;
+    margin: 10px 0px;
+    padding: 15px 45px;
+    border-radius: 100px;
+    transition: .5s;
+}
+
+@mixin background-image {
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+@mixin background-img {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin fontsize {
+    font-size: 15px;
+    line-height: 24px;    
+}
+
+@mixin padding {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+@mixin arrow {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    @include background-img;
+    cursor: pointer;
+    &:hover{
+        background: #FDDCC4;
+        border-radius: 100px;
+        @include background-img;
+        border: none;
+    }    
+}
+
+@mixin button-ourpets {
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    @media (max-width: 1210px) {
+        width: 95%;
+    }
+}
+
+body{
+    font-weight: $fontweight;
+    background-color: $background;
+    h3{
+        font-family: $fontheading;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: $letterspacing;
+        color: $colortext;
+    }
+    h4{
+        font-family: $fontheading;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: $letterspacing;
+        color: $colortext;
+    }
+
+    p{
+        color: $colorheaderfooter;
+        font-family: $fonttext;
+        @include fontsize;
+    }
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    top: 60px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    .textheader{
+        @media (max-width: 768px){
+        padding-right: 40px;
+        }
+    }
+    nav{
+        @media (max-width: 768px){
+        display: none;
+        }          
+    }
+    @media (max-width: 768px){
+        justify-content: center;
+        align-items: center;
+    }
+    .burger{
+        @media (max-width: 768px){
+        background-image: url(../images/Burger.png);
+        @include background-image;
+        width: 30px;
+        height: 22px;}
+    }
+}
+
+.position{
+    height: 120px;
+    top: 0px;
+    padding: 30px 0px;
+}
+
+.header-text{
+        h1{
+            color: $colortext;
+        }
+        p{
+            color: $colorourpets;
+        }
+        a{
+            color: $colortext;
+            &:hover{
+                color: $colorourpets;
+            }
+            &:active{
+                color: $colortext;
+            }
+        }
+}
+
+h1{
+    color: $colorelement;
+    font-family: $fontheading;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: $letterspacing;
+}
+
+p{
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    padding-top: 10px;
+}
+
+li{display: inline-block;
+    padding-left: 35px;
+    a{
+        text-decoration: none;
+        font-family: $fonttext;
+        color: $colortopnormal;
+        @include fontsize;
+        &:active{
+            border-bottom: 3px solid #F1CDB3;
+        }
+        &:hover{
+            color: #FAFAFA;
+        }
+    }
+}
+
+.background{
+    @include backgroundhf;
+}
+
+.top{
+    @include flex();
+    padding-top: 180px;
+    @media (max-width: 530px){
+        padding-bottom: 50px;
+    }
+}
+
+.top-image{
+    background-image:url(../images/start-screen-puppy.png);
+    @include background-image;
+    width: 698px;
+    height: 728px;
+    @media (max-width: 1200px){
+        width: 448px;
+        height: 467px;
+    }
+    @media (max-width: 960px){
+        width: 400px;
+        height: 417px;
+    }
+    @media (max-width: 700px){
+        width: 235px;
+        height: 259px;
+    }
+    @media (max-width: 530px){
+        display: none;
+    }
+}
+
+.top-text{
+    width: 460px;
+    height: 321px;
+    padding-right: $paddingtop;
+    @media (max-width: 960px){
+        width: 260px;
+        height: 181px;
+    }
+    h2 {
+        font-family: $fontheading;
+        color: $colorheaderfooter;
+        font-size: 44px;
+        line-height: 130%;
+        letter-spacing: $letterspacing;
+        padding-bottom: $paddingtop;
+        @media (max-width: 960px){
+            font-size: 24px;
+            padding: 0px;
+        }
+    }
+    p{
+        color: $colortopnormal;
+        padding-bottom: $paddingtop;
+        @media (max-width: 960px){
+            font-size: 11px;
+            line-height: 13px;
+            padding-bottom: 12px;
+        }
+    }
+    button{
+        @include button;
+        background-color: $colorelement;
+        border: none;
+        outline: 0;
+        &:hover{
+            cursor: pointer;
+            background-color: $backgroundhover;
+        }
+    }
+}
+
+.abouthshelder{
+    @include flex();
+    @include padding;
+    background-color: $colorheaderfooter;
+
+    .abouthshelder-image{
+        background-image: url(../images/about-pets.png);
+        @include background-image;
+        width: 300px;
+        height: 408px;
+        margin-right: 60px;
+        @media (max-width: 850px){
+            display: none;
+        }
+    }
+    .abouthshelder-text{
+        width: 490px;
+        height: 380px;
+        padding-left: 60px;
+        @media (max-width: 850px){
+            padding: 0px;
+        }
+        @media (max-width: 530px){
+            width: 290px;
+            height: 250px;
+            h3{
+                font-size: 24px;
+            }
+            p{
+                font-size: 11px;
+                line-height: 15px;
+            }
+        }
+    }
+    p{
+        padding-top: 25px;
+        color: #4C4C4C;
+    }
+}
+
+.ourfriends{
+    display: flex;
+    flex-direction: column;
+    @include padding;
+    .button{
+        @include flex();
+    }
+    button{
+        @include button;
+        background-color: $colorelement;
+        border: none;
+        outline: 0;
+        &:hover{
+            cursor: pointer;
+            background-color: $backgroundhover;
+            }
+    }
+}
+
+.ourfriend{
+    padding-top: 120px;
+    @include flex;    
+}
+
+.ourpets-button{
+    display: flex;
+    .all-left-arrow{
+        background-image: url(../images/__.png);
+        @include background-img;
+        @include button-ourpets;
+        border: 2px solid $colortopnormal;
+    }
+    .left-arrow{
+        background-image: url(../images/left.png);
+        @include background-img;
+        @include button-ourpets;
+        border: 2px solid $colortopnormal;
+    }
+    .arrow{
+        background-image: url(../images/1.png);
+        @include background-img;
+        @include button-ourpets;
+        background-color: $colorelement;
+    } 
+    .right-arrow{
+        background-image: url(../images/right.png);
+        @include background-img;
+        @include button-ourpets;
+        border: 2px solid $colorelement;
+    }
+    .all-right-arrow{
+        background-image: url(../images/allright.png);
+        @include background-img;
+        @include button-ourpets;
+        border: 2px solid $colorelement;
+    }
+}
+
+.ourfriends-text{
+    width: 403px;
+    padding-bottom: 30px;
+    text-align: center;
+    align-self: center;
+    @media (max-width: 460px){
+        h3{
+            font-size: 25px;
+        }
+        width: 300px;
+    }
+}
+
+.ourfriends-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    .arrow-left{
+        background-image: url(../images/Arrow.png);
+        @include arrow;
+        &:hover{
+            background-image: url(../images/Arrow.png);
+        }
+        @media (max-width:1151px){
+            display: none;
+        }
+    }
+    .arrow-right{
+        background-image: url(../images/Arrow-right.png);
+        opacity: 1;
+        @include arrow;
+        &:hover{
+            background-image: url(../images/Arrow-right.png);
+        }
+        @media (max-width:1151px){
+            display: none;
+        }
+    }
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    .card-ourpets{
+        margin: 15px;
+    }
+    @media (max-width: 1210px) {
+        justify-content: center;
+    }
+}
+
+.card{
+    background: #FAFAFA;
+    margin: 30px;
+    @include flex();
+    flex-direction: column;
+    font-family: $fontheading;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: $letterspacing;
+    color: $colortext;
+    .card-ourpets{
+        margin: 15px;
+    }
+    button{
+        @include button;
+        border: 2px solid #F1CDB3;
+        background: #FAFAFA;
+        outline: 0;
+        &:hover{
+            cursor: pointer;
+            background-color: $backgroundhover;
+            border: none;
+        }
+    }
+        .card-text{
+            padding: 30px 0px;
+        }
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+        }
+}
+
+
+
+.you{
+    background-color: $colorheaderfooter;
+}
+
+.youhelp{
+    display: flex;
+    flex-direction: column;
+    @include padding;
+    .youhelp-text{
+        width: 321px;
+        text-align: center;
+        align-self: center;
+        @media (max-width:360px){
+            h3{
+                font-size: 25px;
+            }
+            width: 250px;
+        }
+    }
+    .youhelp-column{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .column{
+            padding: 57px;
+            text-align: center;
+        }
+    }
+}
+
+.donation{
+    @include flex;
+    @include padding;
+    .donation-image{
+        background-image: url(../images/donation-dog.png);
+        @include background-image;
+        width: 505px;
+        height: 261px;
+        @media (max-width:930px){
+            display: none;
+        }
+    }
+    .donation-text{
+        width: 380px;
+        height: 282px;
+        padding-left: 30px;
+        @media (max-width:930px){
+            padding: 0px;
+        }
+        @media (max-width:410px){
+            h3{
+                font-size: 24px;
+            }
+            width: 285px;
+        }
+        h5{
+            font-family: $fontheading;
+            font-size: 15px;
+            line-height: 110%;
+            letter-spacing: $letterspacing;
+            color: $colortext;
+            padding: 20px 0px;
+        }
+        .credit{
+            background: $colorelement;
+            border-radius: 9px;
+            padding: 10px 15px;
+            img{
+                vertical-align: middle;
+            }
+            a{
+                font-family: $fontheading;
+                font-size: 20px;
+                line-height: 23px;
+                letter-spacing: $letterspacing;
+                color: $colortext;
+                padding-left: 15px;
+                text-decoration: none;
+                vertical-align: middle;
+                @media (max-width:410px){
+                    font-size: 15px;
+                }
+            }
+        }
+        p{
+            font-family: $fonttext;
+            font-style: italic;
+            font-size: 12px;
+            line-height: 18px;
+            color: #B2B2B2;
+            padding-top: 20px;
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 40px;
+    @media (max-width: 1025px){
+        padding-top: 10px;
+    }
+    .footer-image{
+        background-image: url(../images/footer-puppy.png);
+        @include background-image;
+        width: 300px;
+        height: 310px;
+        @media (max-width: 1025px){
+            margin: 40px 32px 0px 32px;
+        }
+        @media (max-width: 370px){
+            margin: 40px 0px 0px 0px;
+        }
+    }
+    .footer-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 60px;
+        padding-top: 16px;
+        width: 334px;
+        h3{
+        color: #FFFFFF;
+        }
+        h4{
+            color: $colorelement;
+            padding-left: 20px;
+        }
+        .contacts{
+            display: flex;
+            align-items: center;
+        }
+        @media (max-width: 1025px){
+            margin: 20px 15px;
+            padding: 0px;
+        }
+        @media (max-width: 370px){
+            margin: 20px 0px;
+            padding: 0px;
+        }
+    }
+    @media (max-width: 1025px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
